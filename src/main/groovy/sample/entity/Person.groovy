@@ -13,20 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sample
+package sample.entity
 
-import org.springframework.boot.SpringApplication
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration
-import org.springframework.context.annotation.ComponentScan
-import org.springframework.context.annotation.Configuration
+import grails.persistence.*
 
-@Configuration
-@EnableAutoConfiguration
-@ComponentScan
-class SampleApplication {
-
-    static void main(String[] args) throws Exception {
-        SpringApplication.run(SampleApplication.class, args)
-    }
-
+@Entity
+class Person {
+    String firstName
+    String lastName
 }
