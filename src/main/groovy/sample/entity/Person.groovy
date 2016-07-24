@@ -19,6 +19,7 @@ import grails.persistence.*
 
 @Entity
 class Person {
+    Long id
     String firstName
     String lastName
 }
